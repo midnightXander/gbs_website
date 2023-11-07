@@ -1,0 +1,44 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block header %}
+<span></span>
+<span></span>
+<h3><strong>Qui Sommes-nous ?</strong> </h3>
+
+{% endblock header %}
+{% block content %}
+<div style="display: inline-block; justify-content: center;">
+    <style>
+        h3{
+            padding: 1rem;
+        }
+        p{
+            padding: 5rem;;
+            margin-left: 8rem;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            background-color: blueviolet;
+            border-radius: 10px;
+            width: 70%;
+        }
+    </style>
+    
+    
+    <p>Chez Glamourbeauty&spa, nous sommes là pour vous aider à prendre soin de vous, 
+    de la tête aux pieds.
+    </p>
+    <p>Nous proposons une large gamme de soins 
+        allant des traitements du visage aux massages en passant par les soins des ongles.
+   </p>
+   
+    <p>Nous avons tout ce qu'il vous faut pour vous sentir belle et détendue.</p> 
+
+    <p>Venez découvrir notre institut de beauté et profitez de nos soins de qualité</p>
+    <span class="whatsapp-btn">
+        Contactez nous sur whatsapp &nbsp; <a href="https://wa.me/+237656593891"><button  class="btn btn-outline-success" type="submit"><i class="fa fa-whatsapp"></i></button>
+      </a>
+    </span>
+</div>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<div>
+    <style>
+        p{
+            padding: 2rem;
+            text-align: center;
+            padding-bottom: 20rem;
+        }
+    </style>
+    <p>
+    Ce que vous avez demandé n'a pas l'air d'existé...
+    <strong><a href="{% url 'core:index' %}">revenez a l'acueille</a></strong>
+    </p>
+</div>
+{% endblock content %}

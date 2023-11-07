@@ -1,0 +1,120 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+<main>
+  
+
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        
+        <img src="{% static 'gbs_images/0-0000000hammam.jpg' %}" width="100%" height="100%">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect  width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        
+        <div class="container" style="width: 120px;">
+          
+          <div class="carousel-caption text-start">
+            <h1>Hammam</h1>
+            <p class="opacity-75">redonnez vie a votre peau dans nos salles </p>
+            
+            <!--<p><a class="btn btn-lg btn-primary" href="">Connectez vous</a></p>-->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'gbs_images/cc0dbd380c457854450f7f6f9a0cf780.jpg' %}" width="100%" height="100%">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Coiffure Homme</h1>
+            <p>La coiffure c'est la base de la beauté</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'gbs_images/61n9pdG+QkL._AC_UF894,1000_QL80_.jpg' %}" width="100%" height="100%">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Perruques</h1>
+            <p>Les plus belles perruques sont chez glamour beauty & spa</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'gbs_images/onglerie-intemporelle-saint-christol-les-ales-1.jpg' %}" width="100%" height="100%">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Onglerie</h1>
+            <p>Posez vos ongles a des prix incroyables</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+  <div class="container marketing">
+  
+
+      <div class="row">
+        <div class="col-lg-4">
+            </p>
+            <a href="">
+                <img class="round-header" src="{% static 'gbs_images/611ulWGAV2L._AC_UF1000,1000_QL80_.jpg' %}" width="100px" height="100px">
+              </a>
+              <h2 class="fw-normal">des perruques de qualité</h2>
+          <p>perruques simple,avec lace frontale, longs,fin,court il y en a pour tous </p>
+          <p><a class="btn btn-secondary" href="{% url 'core:services' %}">Voir plus &raquo;</a></p>
+               
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <a href="">
+                <img class="round-header" src="{% static 'gbs_images/1698565492018.jpg' %}" width="100px" height="100px">
+              </a>
+          <h2 class="fw-normal">Soins de visage complet avec Luminotherapie</h2>
+          <p>ravivez votre jeunesse et revelez tout le potentiel de votre beauté avec la luminotherapie<p>
+            <a class="btn btn-secondary" href="{% url 'core:services' %}">Voir plus &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        
+        <div class="col-lg-4">
+            <a href="">
+                <img class="round-header" src="{% static 'gbs_images/1698565579904.jpg' %}" width="100px" height="100px">
+              </a>
+          <h2 class="fw-normal">Des produits de qualité</h2>
+          <p>A gbs, on prend soins de vos cheveux en utilisant des produits qui ont deja fait leurs preuves</p>
+          <p><a class="btn btn-secondary" href="{% url 'core:services' %}">Voir plus &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <p class="whatsapp-btn">
+        Contactez nous sur whatsapp &nbsp; <a href="https://wa.me/+237656593891"><button  class="btn btn-outline-success" type="submit"><i class="fa fa-whatsapp"></i></button>
+      </a>
+        </p>
+
+
+  </div><!-- /.container -->
+</main>
+
+
+{% endblock content %}

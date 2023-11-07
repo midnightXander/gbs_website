@@ -1,0 +1,58 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block header %}
+<p></p>
+<h2 style="color: aquamarine; margin-left: 9vh;">des Astuces beauté pour vous aider a vous sublimer au quotidien</h2>
+{% endblock header %}
+
+{% block content %}
+<hr style="margin:2rem ;">
+
+<div class="container my-5">
+    <style>
+        .astuces{
+            border-radius: 25px;
+
+        }
+    </style>
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <img class="astuces" src="{% static 'gbs_images/1698613825391.jpg' %}" width="100%" height="100%">
+        <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"/></svg>
+      
+    </div>
+  </div>
+
+  <hr style="margin:2rem ;">
+
+  <div class="container my-5">
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <img class="astuces" src="{% static 'gbs_images/1698081988885.jpg' %}" width="100%" height="100%">
+        <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"/></svg>
+      
+    </div>
+  </div>
+
+  <hr style="margin:2rem ;">
+
+  <div class="container my-5">
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <img class="astuces" src="{% static 'gbs_images/1698613839290.jpg' %}" width="100%" height="100%">
+        <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"/></svg>
+      
+    </div>
+  </div>
+
+  <hr style="margin:2rem ;">
+  
+
+  <div class="container my-5">
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <img class="astuces" src="{% static 'gbs_images/1698613852600.jpg' %}" width="100%" height="100%">
+        <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"/></svg>
+      
+    </div>
+  </div>
+
+  </div>
+{% endblock content %}
