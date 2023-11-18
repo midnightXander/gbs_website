@@ -2,43 +2,78 @@
 {% load static %}
 
 {% block header %}
-<span></span>
-<span></span>
-<h3><strong>Qui Sommes-nous ?</strong> </h3>
+<span><br></span>
+<span><br></span>
 
 {% endblock header %}
 {% block content %}
-<div style="display: inline-block; justify-content: center;">
+<div  style="justify-content: center;">
     <style>
-        h3{
-            padding: 1rem;
+        body{
+            background-color: darkslategrey;
+        }
+        .image-holder{
+            display: flex; 
+            justify-content: right;
+            margin-top: 30px;
+            width: 400px;
+            height: 350px;
+        }
+        #back-img{
+            border-radius: 150px;
+            width:100%;
+            height: 80%;
+
+        }
+        .text-container{
+            position: relative;
+            bottom: 140px;
+            left: 50px;
+            margin-top: 20px;
+            padding: 20px;
+            margin-top: 0;            
+            background: rosybrown;
+            border-radius: 10px;
         }
         p{
-            padding: 5rem;;
-            margin-left: 8rem;
+            padding-top: 0;
             display: flex;
-            text-align: center;
+            text-align:left;
             justify-content: center;
-            background-color: blueviolet;
             border-radius: 10px;
             width: 70%;
         }
+        .text-container h3{
+            margin-top: 20px;
+        }
+        .whatsapp-btn{
+            display: inline-block;
+            width: 90%;
+            background-color: green;
+            cursor: pointer;
+            border-radius: 20px;
+        }
     </style>
-    
-    
-    <p>Chez Glamourbeauty&spa, nous sommes là pour vous aider à prendre soin de vous, 
-    de la tête aux pieds.
-    </p>
-    <p>Nous proposons une large gamme de soins 
-        allant des traitements du visage aux massages en passant par les soins des ongles.
-   </p>
+     
+    <div class="image-holder">
+        <img id="back-img" src="{% static 'gbs_images/ou-trouver-un-institut-de-beaute-en-martinique-body-touch.jpg' %}" alt="institute-image">
+    </div>
    
-    <p>Nous avons tout ce qu'il vous faut pour vous sentir belle et détendue.</p> 
-
-    <p>Venez découvrir notre institut de beauté et profitez de nos soins de qualité</p>
-    <span class="whatsapp-btn">
-        Contactez nous sur whatsapp &nbsp; <a href="https://wa.me/+237656593891"><button  class="btn btn-outline-success" type="submit"><i class="fa fa-whatsapp"></i></button>
-      </a>
-    </span>
+    <div class="text-container">
+        <h3><strong>Qui Sommes-nous ?</strong> </h3>
+    <p>Chez Glamourbeauty&spa, nous sommes là pour vous aider à prendre soin de vous, 
+    de la tête aux pieds.<br><br>
+    Nous proposons une large gamme de soins 
+    allant des traitements du visage aux massages en passant par les soins des ongles.<br><br>
+    Nous avons tout ce qu'il vous faut pour vous sentir belle et détendue. 
+    Venez découvrir notre institut de beauté et profitez de nos soins de qualité.
+        </p>
+        <a href="https://wa.me/+237656593891">
+<button class="whatsapp-btn">
+    
+        contactez nous sur whatsapp &nbsp; <i class="fa fa-whatsapp"></i>
+        </button></a>
+    </div>
+    
 </div>
 {% endblock content %}
